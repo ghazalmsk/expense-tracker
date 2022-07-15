@@ -11,7 +11,6 @@ const TransActionForm = ({addTransaction, setIsShow}) => {
         setFormValues({...formValues, [e.target.name]: e.target.value})
     };
     const submitHandler = (e) => {
-      console.log("event", e);
       e.preventDefault();
         addTransaction(formValues);
         setIsShow(false)
